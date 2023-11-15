@@ -1,0 +1,116 @@
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+}
+
+body {
+  font-family: serif;
+  background-color: aliceblue;
+}
+
+/* Header and title styles */
+header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Main container styles */
+.container {
+  background-color: aliceblue;
+  padding: 10px 40px;
+  position: relative;
+  display: flex;
+}
+
+.timeline {
+  background-color: bisque;
+}
+
+.timeline-container {
+  width: 33vw;
+  display: flex;
+}
+
+.french-rev-img {
+  width: 400px;
+  position: relative;
+  left: 22%;
+  contain:content
+}
+
+.sade-img {
+  width: 350px;
+  position: relative;
+  left: 36%;
+  contain: content
+}
+
+/* Left and right timeline items styles */
+.marquis-de-sade {
+  position: absolute;
+  width: 33%;
+  left: 51%
+}
+
+.french-rev {
+  position: absolute;
+  width: 33%;
+  right: 51%;
+}
+
+.timeline-items {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.timeline-items.left {
+  text-align: left;
+}
+
+.timeline-items.right {
+  text-align: right;
+}
+
+/* Timeline item styles */
+
+.timeline-year {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.timeline-month {
+  font-size: 18px;
+  display: block;
+}
+
+.timeline-description {
+  background-color: lightgray;
+  font-family: serif;
+  padding: 10px;
+  border: 1px dotted black;
+}
+
+/* Timeline bar styles */
+.timeline-bar {
+  width: 6px;
+  background-color: navy;
+  position: absolute;
+  top: 100%;
+  bottom: -2000px;
+  left: 50%;
+}
