@@ -16,6 +16,19 @@ header {
   text-align: center;
 }
 
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+nav {
+  align-content: left;
+  border: 2px dimgray dotted;
+}
+
 .title {
   font-family: cursive;
   font-size: 24px;
@@ -26,16 +39,34 @@ h1 {
   text-align: center;
 }
 
+ul li {
+  border: 1px dotted blue;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+ol li {
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px
+}
+
 /* Main container styles */
 .container {
   background-color: aliceblue;
   padding: 10px 40px;
   position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
 }
 
 .timeline {
-  background-color: bisque;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .timeline-container {
@@ -44,35 +75,43 @@ h1 {
 }
 
 .french-rev-img {
-  width: 400px;
+  width: 450px;
   position: relative;
-  left: 22%;
-  contain:content
+  contain: content
 }
 
 .sade-img {
   width: 350px;
   position: relative;
-  left: 36%;
   contain: content
+}
+
+.film-img {
+  width: 120px;
+  contain: content
+}
+
+.cc-img {
+  width: 40px;
+  contain: content;
 }
 
 /* Left and right timeline items styles */
 .marquis-de-sade {
-  position: absolute;
-  width: 33%;
+  width: 100%;
   left: 51%
 }
 
 .french-rev {
-  position: absolute;
-  width: 33%;
+  /* position: absolute; */
+  width: 100%;
   right: 51%;
 }
 
 .timeline-items {
   padding: 20px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .timeline-items.left {
@@ -91,6 +130,7 @@ h1 {
   display: block;
   padding: 10px;
   border: 1px solid black;
+  margin-top: 20px
 }
 
 .timeline-month {
@@ -107,10 +147,6 @@ h1 {
 
 /* Timeline bar styles */
 .timeline-bar {
-  width: 6px;
+  width: 15px;
   background-color: navy;
-  position: absolute;
-  top: 100%;
-  bottom: -2000px;
-  left: 50%;
 }
